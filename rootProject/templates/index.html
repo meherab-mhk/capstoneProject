@@ -1,0 +1,542 @@
+{% extends 'base.html' %}
+{% block body_content %}
+    
+{% load static %}
+    <!-- header-end -->
+    <!-- slider-start -->
+    <div class="slider-area pos-relative">
+        <div class="slider-active">
+            <div class="single-slider slider-height d-flex align-items-center justify-content-center" style="background-image: url({{ home_data.0.slide_img.url }});">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 col-md-12">
+                            <div class="slider-content slider-content-2">
+                                <h1 class="white-color f-700" data-animation="fadeInUp" data-delay=".2s">{{ home_data.0.title  }}</h1>
+                                <p data-animation="fadeInUp" data-delay=".4s">{{ home_data.0.description }}</p>
+                                <button class="theme-btn" data-animation="fadeInUp" data-delay=".6s"><span class="btn-text">admit now</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="single-slider slider-height d-flex align-items-center justify-content-center" style="background-image: url({% static 'img/slider/2.jpg' %});">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-md-12 offset-xl-2">
+                            <div class="slider-content slider-content-2 text-center">
+                                <h1 class="white-color f-700" data-animation="fadeInUp" data-delay=".2s"><span>Admition Going On</span><br>Online Sikkha</h1>
+                                <p data-animation="fadeInUp" data-delay=".4s">Sorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua enim ad minime.</p>
+                                <button class="theme-btn" data-animation="fadeInUp" data-delay=".6s"><span class="btn-text">admit now</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="single-slider slider-height d-flex align-items-center justify-content-center" style="background-image: url({% static 'img/slider/3.jpg' %});">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 col-md-12">
+                            <div class="slider-content slider-content-2">
+                                <h1 class="white-color f-700" data-animation="fadeInUp" data-delay=".2s"><span>Admition Going On</span><br>Online Sikkha</h1>
+                                <p data-animation="fadeInUp" data-delay=".4s">Sorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua enim ad minime.</p>
+                                <button class="theme-btn" data-animation="fadeInUp" data-delay=".6s"><span class="btn-text">admit now</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- slider-end -->
+    <!-- about start -->
+    <div id="about" class="about-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="about-title-section mb-30">
+                        <h1>{{ about_data.0.about_title }}</h1>
+                        <p>{{about_data.0.about_desc}}</p>
+                         
+                        <button class="theme-btn blue-bg-border mt-20"><span class="btn-text">admit now</span></button>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5">
+                    <div class="about-right-img mb-30">
+                        <img src="{{ about_data.0.about_img.url }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-65">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="feature-wrapper mb-30">
+                        <div class="feature-title-heading">
+                            <h3>Scholarship Facility</h3>
+                            <span>01</span>
+                        </div>
+                        <div class="feature-text">
+                            <p>Sorem ipsum dolor sitcon sectet adipis icing elit sed do eiusmod tems. incididune.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="feature-wrapper mb-30">
+                        <div class="feature-title-heading">
+                            <h3>Advance Advisor</h3>
+                            <span>02</span>
+                        </div>
+                        <div class="feature-text">
+                            <p>Sorem ipsum dolor sitcon sectet adipis icing elit sed do eiusmod tems. incididune.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="feature-wrapper mb-30">
+                        <div class="feature-title-heading">
+                            <h3>Sports & Gaming</h3>
+                            <span>03</span>
+                        </div>
+                        <div class="feature-text">
+                            <p>Sorem ipsum dolor sitcon sectet adipis icing elit sed do eiusmod tems. incididune.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about end -->
+    <!-- courses start -->
+    <div id="courses" class="courses-area courses-bg-height pt-100 pb-70" style="background-image: url({% static 'img/courses/courses_bg.png' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="section-title mb-50 text-center">
+                        <div class="section-title-heading mb-20">
+                            <h1 class="white-color">Our Latest Courses</h1>
+                        </div>
+                        <div class="section-title-para">
+                            <p class="white-color">Belis nisl adipiscing sapien sed malesu diame lacus eget erat Cras mollis scelerisqu Nullam arcu liquam here was consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-list">
+                <div class="row courses-active">
+                  {% for data  in course_data %}
+                    <div class="col-xl-12">
+                        <div class="courses-wrapper course-radius-none mb-30">
+                            <div class="courses-thumb">
+                                <a href="{% url 'course_details' %}"><img src="{{ data.course_img.url }}" alt=""></a>
+                            </div>
+                            <div class="course-main-content clearfix">
+                                <div class="courses-content">
+                                    <div class="courses-category-name">
+                                        <span>
+                                            <a href="#">{{ data.btn_subject }}</a>
+                                        </span>
+                                    </div>
+                                    <div class="courses-heading">
+                                        <h1><a href="{% url 'course_details' %}">{{ data.subject_name }}</a></h1>
+                                    </div>
+                                    <div class="courses-para">
+                                        <p>{{ data.desc }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-wrapper-bottom clearfix">
+                                <div class="courses-icon d-flex f-left">
+                                    <div class="courses-single-icon">
+                                        <span class="ti-user"></span>
+                                        <span class="user-number">35</span>
+                                    </div>
+                                    <div class="courses-single-icon">
+                                        <span class="ti-heart"></span>
+                                        <span class="user-number">35</span>
+                                    </div>
+                                </div>
+                                <div class="courses-button f-right">
+                                    <a href="{% url 'course_details' %}">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!-- <div class="col-xl-12">
+                        <div class="courses-wrapper course-radius-none mb-30">
+                            <div class="courses-thumb">
+                                <a href="{% url 'course_details' %}"><img src="{% static 'img/courses/single_courses_thumb_04.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="courses-author">
+                                <img src="{% static 'img/courses/coursesauthor1.png' %}" alt="">
+                            </div>
+                            <div class="course-main-content clearfix">
+                                <div class="courses-content">
+                                    <div class="courses-category-name">
+                                        <span>
+                                            <a href="#">English</a>
+                                        </span>
+                                    </div>
+                                    <div class="courses-heading">
+                                        <h1><a href="{% url 'course_details' %}">English For Tommorow</a></h1>
+                                    </div>
+                                    <div class="courses-para">
+                                        <p>Maecenas fermentum consequat mi fonec has fermentum ellentesque malesuada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-wrapper-bottom clearfix">
+                                <div class="courses-icon d-flex f-left">
+                                    <div class="courses-single-icon">
+                                        <span class="ti-user"></span>
+                                        <span class="user-number">35</span>
+                                    </div>
+                                    <div class="courses-single-icon">
+                                        <span class="ti-heart"></span>
+                                        <span class="user-number">35</span>
+                                    </div>
+                                </div>
+                                <div class="courses-button f-right">
+                                    <a href="{% url 'course_details' %}">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- courses end -->
+    <!-- team start -->
+    <div class="team-area pt-95 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="section-title mb-50 text-center">
+                        <div class="section-title-heading mb-20">
+                            <h1 class="primary-color">Our Experience Advisors</h1>
+                        </div>
+                        <div class="section-title-para">
+                            <p class="gray-color">Belis nisl adipiscing sapien sed malesu diame lacus eget erat Cras mollis scelerisqu Nullam arcu liquam here was consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-list">
+                <div class="row">
+                    {% for data in advisor_data %}
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="team-wrapper mb-30">
+                            <div class="team-thumb">
+                                <img src="{{ data.img.url }}" alt="">
+                            </div>
+                            <div class="team-social-info text-center">
+                                <div class="team-social-para">
+                                    <p>{{ data.img_title }}</p>
+                                </div>
+                                <div class="team-social-icon-list">
+                                    <ul>
+                                        <li><a href="#"><span class="ti-facebook"></span></a></li>
+                                        <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                                        <li><a href="#"><span class="ti-google"></span></a></li>
+                                        <li><a href="#"><span class="ti-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-teacher-info text-center">
+                                <a href="advisors_details.html"><h1>{{ data.name }}</h1></a>
+                                <h2>{{ data.title }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team end -->
+    <!-- events start -->
+    <div id="events" class="events-area events-bg-height pt-100 pb-95" style="background-image: url({% static 'img/courses/courses_bg.png' %})">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="section-title mb-50 text-center">
+                        <div class="section-title-heading mb-20">
+                            <h1 class="white-color">Upcoming Events</h1>
+                        </div>
+                        <div class="section-title-para">
+                            <p class="white-color">Belis nisl adipiscing sapien sed malesu diame lacus eget erat Cras mollis scelerisqu Nullam arcu liquam here was consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="events-list mb-30">
+                <div class="row">
+                    {% for data  in  events_data %}
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="single-events mb-30">
+                            <div class="events-wrapper">
+                                <div class="events-inner d-flex">
+                                    <div class="events-thumb">
+                                        <img width="200" height="212" src="{{ data.img.url }}" alt="">
+                                    </div>
+                                    <div class="events-text white-bg">
+                                        <div class="event-text-heading mb-20">
+                                            <div class="events-calendar text-center f-left">
+                                                <span class="date">{{ data.date }}</span>
+                                                 <span class="month">{{ data.date_m_y }}</span>
+                                            </div>
+                                            <div class="events-text-title clearfix">
+                                                <a href="#">
+                                                    <h4>{{ data.event_name }}</h4>
+                                                </a>
+                                                <div class="time-area">
+                                                    <span class="ti-time"></span>
+                                                    <span class="published-time">{{ data.time }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="events-para">
+                                            <p>{{ data.desc }}</p>
+                                        </div>
+                                        <div class="events-speaker">
+                                            <h2>Speaker : <span>{{ data.speaker }}</span></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                     
+                </div>
+            </div>
+            <div class="events-view-btn">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="view-all-events text-center">
+                            <button class="yewello-btn">view all events<span>&rarr;</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- events end -->
+    <!-- testimonials start -->
+    <div class="testimonilas-area pt-100 pb-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="section-title mb-50 text-center">
+                        <div class="section-title-heading mb-20">
+                            <h1 class="primary-color">What Our Students Say</h1>
+                        </div>
+                        <div class="section-title-para">
+                            <p class="gray-color">Belis nisl adipiscing sapien sed malesu diame lacus eget erat Cras mollis scelerisqu Nullam arcu liquam here was consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonilas-list">
+                <div class="row testimonilas-active">
+                    <div class="col-xl-12">
+                        <div class="testimonilas-wrapper mb-110">
+                            <div class="testimonilas-heading d-flex">
+                                <div class="testimonilas-author-thumb">
+                                    <img src="{% static 'img/testimonials/testimonilas_author_thumb1.png' %}" alt="">
+                                </div>
+                                <div class="testimonilas-author-title">
+                                    <h1>Lisa McClanahan</h1>
+                                    <h2>CSE Student</h2>
+                                </div>
+                            </div>
+                            <div class="testimonilas-para">
+                                <p>But also the leap into electronic type reman see essentially unchanged. It was popul arised thew with the release of letraset sheets.</p>
+                            </div>
+                            <div class="testimonilas-rating">
+                                <ul>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="testimonilas-wrapper">
+                            <div class="testimonilas-heading d-flex">
+                                <div class="testimonilas-author-thumb">
+                                    <img src="{% static 'img/testimonials/testimonilas_author_thumb1.png' %}" alt="">
+                                </div>
+                                <div class="testimonilas-author-title">
+                                    <h1>Lisa McClanahan</h1>
+                                    <h2>CSE Student</h2>
+                                </div>
+                            </div>
+                            <div class="testimonilas-para">
+                                <p>But also the leap into electronic type reman see essentially unchanged. It was popul arised thew with the release of letraset sheets.</p>
+                            </div>
+                            <div class="testimonilas-rating">
+                                <ul>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="testimonilas-wrapper">
+                            <div class="testimonilas-heading d-flex">
+                                <div class="testimonilas-author-thumb">
+                                    <img src="{% static 'img/testimonials/testimonilas_author_thumb2.png' %}" alt="">
+                                </div>
+                                <div class="testimonilas-author-title">
+                                    <h1>Trevor J. Angelo</h1>
+                                    <h2>Englisg Student</h2>
+                                </div>
+                            </div>
+                            <div class="testimonilas-para">
+                                <p>But also the leap into electronic type reman see essentially unchanged. It was popul arised thew with the release of letraset sheets.</p>
+                            </div>
+                            <div class="testimonilas-rating">
+                                <ul>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-12">
+                        <div class="testimonilas-wrapper">
+                            <div class="testimonilas-heading d-flex">
+                                <div class="testimonilas-author-thumb">
+                                    <img src="{% static 'img/testimonials/testimonilas_author_thumb1.png' %}" alt="">
+                                </div>
+                                <div class="testimonilas-author-title">
+                                    <h1>Marquita Brown</h1>
+                                    <h2>CSE Student</h2>
+                                </div>
+                            </div>
+                            <div class="testimonilas-para">
+                                <p>But also the leap into electronic type reman see essentially unchanged. It was popul arised thew with the release of letraset sheets.</p>
+                            </div>
+                            <div class="testimonilas-rating">
+                                <ul>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                    <li><span class="ti-star"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonials end -->
+    <!-- video start -->
+    <div class="video-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="video-wrapper text-center">
+                        <div class="video-content">
+                            <a class="popup-video" href="https://www.youtube.com/watch?v=i8nLrvcNcrg"><img src="{% static 'img/video/play_icon.png' %}" alt=""></a>
+                            <span>Watch Our Latest Video</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video end -->
+    <!-- counter start -->
+    <div class="counter-area">
+        <div class="container pt-90 pb-65">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="couter-wrapper mb-30 text-center">
+                        <img src="{% static 'img/counter/counter_icon1.png' %}" alt="">
+                        <span class="counter">10532</span>
+                        <h3>Satisfied Students</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="couter-wrapper mb-30 text-center">
+                        <img src="{% static 'img/counter/counter_icon2.png' %}" alt="">
+                        <span class="counter">7985</span>
+                        <h3>Courses Complated</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="couter-wrapper mb-30 text-center">
+                        <img src="{% static 'img/counter/counter_icon3.png' %}" alt="">
+                        <span class="counter">5382</span>
+                        <h3>Satisfied Students</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="couter-wrapper mb-30 text-center">
+                        <img src="{% static 'img/counter/counter_icon4.png' %}" alt="">
+                        <span class="counter">354</span>
+                        <h3>Expert Advisors</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- counter end -->
+    <!-- latest_news start -->
+    <div id="blog" class="latest_news-area gray-bg pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-md-8 offset-md-2">
+                    <div class="section-title mb-50 text-center">
+                        <div class="section-title-heading mb-20">
+                            <h1 class="primary-color">Latest News</h1>
+                        </div>
+                        <div class="section-title-para">
+                            <p class="gray-color">Belis nisl adipiscing sapien sed malesu diame lacus eget erat Cras mollis scelerisqu Nullam arcu liquam here was consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for data in news_data %}
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="blog-wrapper mb-30">
+                        <div class="blog-thumb mb-25">
+                            <a href="{% url 'news_details' %}"><img src= "{{ data.img.url }}" alt=""></a>
+                            <span class="blog-category">news</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span>{{ data.date }}</span>
+                            </div>
+                            <h5><a href="{% url 'news_details' %}">{{ data.title }}</a></h5>
+                            <p>{{ data.desc }}</p>
+                            <div class="read-more-btn">
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- latest_blog end -->
+
+
+{% endblock body_content %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block body_content %}
+{% load static %}    
+
+ 
+    <!-- slider-start -->
+    <div class="slider-area">
+        <div class="pages-title">
+            <div class="single-slider slider-height slider-height-breadcrumb d-flex align-items-center" style="background-image: url({% static 'img/bg/others_bg.jpg' %});">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider-content slider-content-breadcrumb text-center">
+                                <h1 class="white-color f-700">Our Shop</h1>
+                                <nav class="text-center" aria-label="breadcrumb">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Our Shop</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider-end -->
+    <!-- courses start -->
+    <div class="shop-area gray-bg pt-100 pb-70">
+        <div class="container">
+            <div class="shop-list">
+                <div class="row shop-active">
+                    {% for data in shop_data %}
+                    <div class="col-xl-12">
+                        <div class="shop-inner mb-30 white-bg">
+                            <div class="shop-thumb">
+                                <a href="{% url 'shop' %}"><img src="{{ data.img.url }}" alt=""></a>
+                            </div>
+                            <div class="book-inner-content">
+                                <div class="sohop-heading mb-20">
+                                    <h1 class="shop-book-name"><a href="{% url 'shop' %}">{{ data.book_name }}</a></h1>
+                                    <h2 class="book-writter">Writter : <span class="f-700">{{ data.writer }}</span></h2>
+                                </div>
+                                <div class="shop-inner-details d-flex">
+                                    <div class="book-price">
+                                        <span class="price">Price</span>
+                                        <span class="user-number">{{ data.price }}</span>
+                                    </div>
+                                    <div class="book-ratings text-right">
+                                        <ul>
+                                            <li><span class="ti-star"></span></li>
+                                            <li><span class="ti-star"></span></li>
+                                            <li><span class="ti-star"></span></li>
+                                            <li><span class="ti-star"></span></li>
+                                            <li><span class="ti-star"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+    <!-- courses end -->
+ 
+{% endblock body_content %}

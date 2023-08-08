@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+ {% block body_content %}
+ {% block login_text %}
+
+ {% endblock login_text %}
+<div class="container">
+    <div class="col-lg-4 col-md-6 offset-4">
+        {% for msg in messages %}
+        <h4 class="text-danger">{{msg}}</h4>
+        {% endfor %}
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <h3>Login</h3>
+          <label>Username/Email</label>
+          <input type="text" name="username" class="form-control" placeholder="Enter usernmae" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your secret info with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="password" class="form-control"  placeholder="Password" required>
+        </div>
+        <div class="form-group form-check">
+        <a href="{% url 'signup' %}">Create account</a>
+        </div>
+        <button type="submit" class="btn btn-primary">LogIn</button>
+      </form>
+    </div>
+</div>
+{% endblock body_content %}  

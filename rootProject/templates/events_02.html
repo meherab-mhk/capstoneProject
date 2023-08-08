@@ -1,0 +1,448 @@
+{% extends 'base.html' %} 
+{% block body_content %}
+{% load static %}   
+
+    <!-- slider-start -->
+    <div class="slider-area">
+        <div class="pages-title">
+            <div class="single-slider slider-height slider-height-breadcrumb d-flex align-items-center" style="background-image: url({% static 'img/bg/others_bg.jpg' %});">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider-content slider-content-breadcrumb text-center">
+                                <h1 class="white-color f-700">Our Events2</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider-end -->
+    <div class="course-details-area gray-bg pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="row">
+                        <div class="col-xl-12 events-paddings">
+                            <div class="single-events mb-30">
+                                <div class="events-wrapper">
+                                    <div class="events-inner d-flex">
+                                        <div class="events-thumb">
+                                            <a href="{% url 'events_details' %}"><img src="{% static 'img/events/events_001.png' %}" alt=""></a>
+                                        </div>
+                                        <div class="events-text events-text-2 white-bg">
+                                            <div class="event-text-heading d-flex mb-20">
+                                                <div class="events-text-title">
+                                                    <a href="{% url 'events_details' %}">
+                                                        <h4>Annual Meeting -2018</h4>
+                                                    </a>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-timer"></span>
+                                                        <span class="published-time">8:00 AM - 5:00 PM</span>
+                                                    </div>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-map-alt"></span>
+                                                        <span class="published-time published-location">High street, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="events-para">
+                                                <p>I will give you a complete account of the system and expound the actual teachings</p>
+                                            </div>
+                                            <div class="events-view-btn mt-10">
+                                                <a href="{% url 'events_details' %}">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-events mb-30">
+                                <div class="events-wrapper">
+                                    <div class="events-inner d-flex">
+                                        <div class="events-thumb">
+                                            <a href="{% url 'events_details' %}"><img src="img/events/events_002.png" alt=""></a>
+                                        </div>
+                                        <div class="events-text events-text-2 white-bg">
+                                            <div class="event-text-heading d-flex mb-20">
+                                                <div class="events-text-title">
+                                                    <a href="{% url 'events_details' %}">
+                                                        <h4>Science Fair -2018</h4>
+                                                    </a>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-timer"></span>
+                                                        <span class="published-time">8:00 AM - 5:00 PM</span>
+                                                    </div>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-map-alt"></span>
+                                                        <span class="published-time published-location">High street, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="events-para">
+                                                <p>I will give you a complete account of the system and expound the actual teachings</p>
+                                            </div>
+                                            <div class="events-view-btn mt-10">
+                                                <a href="{% url 'events_details' %}">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-events mb-30">
+                                <div class="events-wrapper">
+                                    <div class="events-inner d-flex">
+                                        <div class="events-thumb">
+                                            <a href="{% url 'events_details' %}"><img src="img/events/events_003.jpg" alt=""></a>
+                                        </div>
+                                        <div class="events-text events-text-2 white-bg">
+                                            <div class="event-text-heading d-flex mb-20">
+                                                <div class="events-text-title">
+                                                    <a href="{% url 'events_details' %}">
+                                                        <h4>Annual Meeting -2018</h4>
+                                                    </a>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-timer"></span>
+                                                        <span class="published-time">8:00 AM - 5:00 PM</span>
+                                                    </div>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-map-alt"></span>
+                                                        <span class="published-time published-location">High street, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="events-para">
+                                                <p>I will give you a complete account of the system and expound the actual teachings</p>
+                                            </div>
+                                            <div class="events-view-btn mt-10">
+                                                <a href="{% url 'events_details' %}">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-events mb-30">
+                                <div class="events-wrapper">
+                                    <div class="events-inner d-flex">
+                                        <div class="events-thumb">
+                                            <a href="{% url 'events_details' %}"><img src="{% static 'img/events/events_004.jpg' %}" alt=""></a>
+                                        </div>
+                                        <div class="events-text events-text-2 white-bg">
+                                            <div class="event-text-heading d-flex mb-20">
+                                                <div class="events-text-title">
+                                                    <a href="{% url 'events_details' %}">
+                                                        <h4>Science Fair -2018</h4>
+                                                    </a>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-timer"></span>
+                                                        <span class="published-time">8:00 AM - 5:00 PM</span>
+                                                    </div>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-map-alt"></span>
+                                                        <span class="published-time published-location">High street, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="events-para">
+                                                <p>I will give you a complete account of the system and expound the actual teachings</p>
+                                            </div>
+                                            <div class="events-view-btn mt-10">
+                                                <a href="{% url 'events_details' %}">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-events mb-30">
+                                <div class="events-wrapper">
+                                    <div class="events-inner d-flex">
+                                        <div class="events-thumb">
+                                            <a href="{% url 'events_details' %}"><img src="{% static 'img/events/events_005.jpg' %}" alt=""></a>
+                                        </div>
+                                        <div class="events-text events-text-2 white-bg">
+                                            <div class="event-text-heading d-flex mb-20">
+                                                <div class="events-text-title">
+                                                    <a href="{% url 'events_details' %}">
+                                                        <h4>Annual Meeting -2018</h4>
+                                                    </a>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-timer"></span>
+                                                        <span class="published-time">8:00 AM - 5:00 PM</span>
+                                                    </div>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-map-alt"></span>
+                                                        <span class="published-time published-location">High street, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="events-para">
+                                                <p>I will give you a complete account of the system and expound the actual teachings</p>
+                                            </div>
+                                            <div class="events-view-btn mt-10">
+                                                <a href="{% url 'events_details' %}">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-events mb-30">
+                                <div class="events-wrapper">
+                                    <div class="events-inner d-flex">
+                                        <div class="events-thumb">
+                                            <a href="{% url 'events_details' %}"><img src="{% static 'img/events/events_006.jpg' %}" alt=""></a>
+                                        </div>
+                                        <div class="events-text events-text-2 white-bg">
+                                            <div class="event-text-heading d-flex mb-20">
+                                                <div class="events-text-title">
+                                                    <a href="{% url 'events_details' %}">
+                                                        <h4>Science Fair -2018</h4>
+                                                    </a>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-timer"></span>
+                                                        <span class="published-time">8:00 AM - 5:00 PM</span>
+                                                    </div>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-map-alt"></span>
+                                                        <span class="published-time published-location">High street, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="events-para">
+                                                <p>I will give you a complete account of the system and expound the actual teachings</p>
+                                            </div>
+                                            <div class="events-view-btn mt-10">
+                                                <a href="{% url 'events_details' %}">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-events mb-30">
+                                <div class="events-wrapper">
+                                    <div class="events-inner d-flex">
+                                        <div class="events-thumb">
+                                            <a href="{% url 'events_details' %}"><img src="{% static 'img/events/events_007.jpg' %}" alt=""></a>
+                                        </div>
+                                        <div class="events-text events-text-2 white-bg">
+                                            <div class="event-text-heading d-flex mb-20">
+                                                <div class="events-text-title">
+                                                    <a href="{% url 'events_details' %}">
+                                                        <h4>Science Fair -2018</h4>
+                                                    </a>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-timer"></span>
+                                                        <span class="published-time">8:00 AM - 5:00 PM</span>
+                                                    </div>
+                                                    <div class="time-area time-area-2">
+                                                        <span class="ti-map-alt"></span>
+                                                        <span class="published-time published-location">High street, USA</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="events-para">
+                                                <p>I will give you a complete account of the system and expound the actual teachings</p>
+                                            </div>
+                                            <div class="events-view-btn mt-10">
+                                                <a href="{% url 'events_details' %}">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <nav class="course-pagination mb-30" aria-label="Page navigation example">
+                                <ul class="pagination justify-content-start">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 events-sidebar-margin">
+                    <div class="courses-details-sidebar-area">
+                        <div class="widget mb-40 white-bg">
+                            <div class="sidebar-form">
+                                <form action="#">
+                                    <input placeholder="Search course" type="text">
+                                    <button type="submit">
+                                        <i class="ti-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="widget mb-40 widget-padding white-bg">
+                            <h4 class="widget-title">Category</h4>
+                            <div class="widget-link">
+                                <ul class="sidebar-link">
+                                    <li>
+                                        <a href="#">Busines Studies</a>
+                                        <span>05</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">CSE Engineering</a>
+                                        <span>07</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Lerning English</a>
+                                        <span>03</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Civil Engineering</a>
+                                        <span>05</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Islamic Studies</a>
+                                        <span>02</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Banking Management</a>
+                                        <span>09</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Social Science</a>
+                                        <span>13</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget mb-40 widget-padding white-bg">
+                            <h4 class="widget-title">Recent Course</h4>
+                            <div class="sidebar-rc-post">
+                                <ul>
+                                    <li>
+                                        <div class="sidebar-rc-post-main-area d-flex mb-20">
+                                            <div class="rc-post-thumb">
+                                                <a href="{% url 'course_details' %}">
+                                                    <img src="{% static 'img/courses/rcourses_thumb01.png' %}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="{% url 'course_details' %}">How to design mobile apps with full resposibe layout</a>
+                                                </h4>
+                                                <div class="widget-advisors-name">
+                                                    <span>Advisor : <span class="f-500">Marcelo</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sidebar-rc-post-main-area d-flex mb-20">
+                                            <div class="rc-post-thumb">
+                                                <a href="{% url 'course_details' %}">
+                                                    <img src="{% static 'img/courses/rcourses_thumb02.png' %}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="{% url 'course_details' %}">How to design mobile apps with full resposibe layout</a>
+                                                </h4>
+                                                <div class="widget-advisors-name">
+                                                    <span>Advisor : <span class="f-500">Marcelo</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sidebar-rc-post-main-area d-flex mb-20">
+                                            <div class="rc-post-thumb">
+                                                <a href="#">
+                                                    <img src="{% static 'img/courses/rcourses_thumb03.png' %}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="{% url 'course_details' %}">How to design mobile apps with full resposibe layout</a>
+                                                </h4>
+                                                <div class="widget-advisors-name">
+                                                    <span>Advisor : <span class="f-500">Marcelo</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sidebar-rc-post-main-area d-flex">
+                                            <div class="rc-post-thumb">
+                                                <a href="{% url 'course_details' %}">
+                                                    <img src="{% static 'img/courses/rcourses_thumb04.png' %}" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="rc-post-content">
+                                                <h4>
+                                                    <a href="{% url 'course_details' %}">How to design mobile apps with full resposibe layout</a>
+                                                </h4>
+                                                <div class="widget-advisors-name">
+                                                    <span>Advisor : <span class="f-500">Marcelo</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget mb-40 widget-padding white-bg">
+                            <h4 class="widget-title">Recent Course</h4>
+                            <div class="widget-tags clearfix">
+                                <ul class="sidebar-tad clearfix">
+                                    <li>
+                                        <a href="#">CSE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Study</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Education</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Engineering</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Advisor</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget mb-40 widget-padding banner-padding white-bg">
+                            <div class="banner-thumb pos-relative">
+                                <img src="{% static 'img/courses/course_banner_01.png' %}" alt="">
+                                <div class="bannger-text">
+                                    <h2>New eBook are availablei our shop</h2>
+                                    <div class="banner-btn">
+                                        <button class="btn white-bg-btn">shop now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body_content %}
